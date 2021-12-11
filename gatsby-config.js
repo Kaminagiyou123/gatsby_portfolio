@@ -21,16 +21,11 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
 
     {
-      resolve: `gatsby-source-strapi`,
+      resolve: "gatsby-source-strapi",
       options: {
-        apiURL: `http://localhost:1337`,
-        contentTypes: [`job`],
+        apiURL: "http://localhost:1337/api",
+        collectionTypes: ["job"],
         queryLimit: 1000,
-
-        loginData: {
-          identifier: "",
-          password: "",
-        },
       },
     },
   ],
