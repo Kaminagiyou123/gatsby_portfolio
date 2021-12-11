@@ -34,7 +34,6 @@ const Jobs = () => {
         {/* btn container */}
         <div className="btn-container">
           {jobs[0].data.map((item, index) => {
-            console.log(item.attributes.company)
             return (
               <button
                 key={index}
