@@ -6,7 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-
+  siteMetadata: {
+    title: "WebDev Portfolio",
+    description: "WebDev Portfolio",
+    titleTemplate: `%s | WebDev Portfolio`,
+    url: `https://gatsby-portfolio-123.netlify.app`,
+    twitterUsername: "",
+    image: "",
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -25,6 +32,7 @@ module.exports = {
       options: {
         apiURL: "http://localhost:1337/api",
         collectionTypes: ["job", "project"],
+        singleTypes: [`about`],
         queryLimit: 1000,
       },
     },
